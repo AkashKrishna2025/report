@@ -1,0 +1,60 @@
+/* src/sections/HeroSection.css */
+.hero {
+  position: relative;
+  background-color: var(--bg-light); /* Ensure light background */
+  color: var(--text-dark);
+  text-align: center;
+  padding: 6rem 0; /* Adjusted padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero-title {
+    color: #008281 !important;
+  font-size: 3.8rem; /* Larger, more impactful title */
+  color: var(--brand-primary);
+  margin-bottom: 0.4em; /* Reduced bottom margin */
+  line-height: 1.1;
+  font-family: var(--font-family-headings);
+}
+
+.hero-subtitle {
+  font-size: 1.6rem; /* Slightly larger */
+  color: var(--text-medium);
+  opacity: 0.9;
+  margin-bottom: 2em; /* More space before description */
+  font-weight: 300;
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-dark);
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+    min-height: 300px;
+  }
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+  }
+}

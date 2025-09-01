@@ -1,0 +1,61 @@
+/* src/sections/ApprovalsSection.css */
+.approvals-section {
+  padding: 5rem 0;
+  background-color: var(--bg-light); /* White background */
+  text-align: center;
+}
+
+.approvals-title {
+    color: #008281 !important;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--brand-primary);
+}
+
+.approval-list {
+  list-style: none; /* Remove default list style */
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem; /* Space between approval items */
+}
+
+.approval-item {
+  background-color: var(--bg-section); /* Light gray background for items */
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border-left: 4px solid var(--brand-primary);
+}
+
+.approval-item h3 {
+  color: var(--brand-primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-family-headings);
+}
+
+.approval-item p {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.approval-item .note {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  margin-top: 1rem;
+  border-top: 1px dashed var(--border-light);
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .approvals-title {
+    font-size: 2.2rem;
+  }
+  .approval-item h3 {
+    font-size: 1.2rem;
+  }
+}

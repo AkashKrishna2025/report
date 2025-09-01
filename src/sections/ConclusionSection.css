@@ -1,0 +1,57 @@
+/* src/sections/ConclusionSection.css */
+.conclusion {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: var(--bg-light);
+}
+
+.conclusion-title {
+    color: #008281 !important;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--brand-primary);
+}
+
+.conclusion-text {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  color: var(--text-medium);
+  line-height: 1.7;
+}
+
+.bms-update-note {
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+.contact-button {
+  background-color: var(--brand-primary);
+  color: var(--text-light);
+  border: none;
+  padding: 1.2rem 2.5rem; /* Larger button */
+  font-size: 1.1rem;
+  border-radius: 50px; /* Pill-shaped button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-button:hover {
+  background-color: var(--brand-secondary); /* Darker teal on hover */
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .conclusion-title {
+    font-size: 2.2rem;
+  }
+  .contact-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
