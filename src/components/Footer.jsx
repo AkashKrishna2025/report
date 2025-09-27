@@ -1,13 +1,11 @@
 // src/components/Footer.jsx
 import React from 'react';
-import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ companyName, clientBrandColor }) => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <p>&copy; 2025 Colladome IT Network Solutions PVT LTD. All rights reserved.</p>
-      </div>
+    <footer className="mt-12 p-6 lg:p-8 text-center text-white rounded-lg shadow-md" style={{ backgroundColor: clientBrandColor }}>
+      <p className="text-lg font-medium">&copy; {new Date().getFullYear()} {companyName}. All rights reserved.</p>
+      <p className="text-sm mt-2">Colladome IT Network Solution - Committed to achieving your digital goals.</p>
     </footer>
   );
 };

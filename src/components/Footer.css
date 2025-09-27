@@ -1,9 +1,0 @@
-/* src/components/Footer.css */
-.footer {
-  background-color: var(--brand-primary); /* Use brand primary for footer for a clean look */
-  color: var(--text-light);
-  padding: 1.5rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.05); /* Subtle shadow at top */
-}
